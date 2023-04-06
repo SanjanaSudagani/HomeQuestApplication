@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'HomeQuest'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_358154CA6CBF41D3A3642036A69210B0 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0FB37B154BFA496FB6D0AC769128357D }}
