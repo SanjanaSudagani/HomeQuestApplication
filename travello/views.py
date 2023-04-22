@@ -48,6 +48,7 @@ def index(request):
 def apartments(request):
     all_apartments = Apartment.objects.all()
     if request.method == 'POST':
+        
         #selectedIds = json.loads(request.POST.get('selectedIds'))
         fields = request.POST.get('fields')
         bedrooms = request.POST.get('bedrooms')
@@ -106,7 +107,7 @@ def apartments(request):
                 apts = apts + [x for x in all_apartments if int(x.ApartmentID) == int(y.apartmentID) and str(y.username) == str(request.user)]
             return render(request, "apartments.html", {'dests': all_apartments,'wishes': apts, 'loggedIn': loggedIn})
         else:
-            all_apartments = Apartment.objects.all()
+            # all_apartments = Apartment.objects.all()
             return render(request, "apartments.html", {'dests': all_apartments})
 
 def logout(request):
