@@ -27,7 +27,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'u=#gre%c92(v5j&$&cvwd6=0g@t3xjkjz3zeye1y5=ifxjrqi-'
-# SECRET_KEY = os.environ.get('SECRET_KEY', get_random_secret_key())
+SECRET_KEY = os.environ.get('SECRET_KEY', get_random_secret_key())
 # s(%c4cur07t9q7gi%6hh9*tj&3ba+&mw@s6$h-zw!__u4obpz^
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
